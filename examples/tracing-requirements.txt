@@ -1,0 +1,2 @@
+# Install into .venv-tracing. Upstream may require a different Transformers version than core.
+circuit-tracer @ git+https://github.com/decoderesearch/circuit-tracer.git@255d989e93be1299d53d67b59e9fd76a0e274b14

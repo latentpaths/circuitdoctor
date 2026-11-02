@@ -1,0 +1,17 @@
+CircuitDoctor code copyright (c) 2026 Latent Paths. MIT License.
+
+Published artifacts in src/circuitdoctor/resources/published-p50/ are from:
+Rikiya Takehi, Jayden Teoh, Alex Zhang, and Omar Khattab.
+"Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights."
+November 2026. https://rikiyat.github.io/blog/weight-space-programming/
+Source: supplied lm_understand-logs/exp8_math/runs/p50c/edit/.
+CC BY 4.0: https://creativecommons.org/licenses/by/4.0/legalcode.
+The edit.npz and manifest.json are unmodified. The importer and generated patch
+format are new. No endorsement by the original authors is implied.
+
+Official IFEval checkers in src/circuitdoctor/vendor/ifeval/ are copyright
+The Google Research Authors, Apache 2.0; see their LICENSE and provenance.json.
+Only package import paths are changed. Provenance pins the upstream commit and hashes.
+
+Downloaded checkpoints, datasets, lenses, and transcoders retain their own terms.
+Redistributing a complete edited checkpoint also requires the base model's license.

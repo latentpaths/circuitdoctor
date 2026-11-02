@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-0.8B",
+  "revision": "2fc06364715b967f1860aea9cf38778875588b17",
+  "device": "auto",
+  "dtype": "bfloat16",
+  "batch_size": 16,
+  "sampling": {
+    "thinking": true,
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": 20,
+    "presence_penalty": 1.5,
+    "max_new_tokens": 32768,
+    "seed": 0
+  },
+  "diagnostic_batches": 25,
+  "candidate_patches": 10,
+  "capture_token_limit": 2048
+}

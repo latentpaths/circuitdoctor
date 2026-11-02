@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "target_config": "configs/qwen35.json",
+  "seeds": [0, 1, 2],
+  "editors": ["openai/gpt-oss-20b", "openai/gpt-oss-120b"],
+  "diagnostic_batches": 25,
+  "candidate_patches": 10,
+  "methods": ["mechanistic-agent", "behavioral-agent", "scripted", "random"],
+  "evaluation": {
+    "gsm8k_problems": 256,
+    "math500_problems": 128,
+    "ifeval_problems": 541,
+    "subset_samples": 1,
+    "published_full_samples": {"math500": 4, "gsm8k": 2, "ifeval": 2},
+    "max_new_tokens": 32768,
+    "bootstrap_replicates": 5000
+  },
+  "success": {"gsm8k_delta_pp": 10, "gsm8k_ci95_lower_gt": 0,
+    "max_cut_share_ratio": 0.5, "ifeval_min_delta_pp": -2},
+  "spending_caps_usd": {"pilot": 40, "reproduction": 160, "experiments": 150, "adapters": 50, "reserve": 100}
+}

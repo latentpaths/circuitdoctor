@@ -1,0 +1,36 @@
+[project]
+name = "circuitdoctor"
+version = "0.1.0"
+description = "Budgeted causal investigation and reversible weight repair for open models"
+readme = "README.md"
+requires-python = ">=3.12,<3.14"
+license = "MIT"
+dependencies = [
+  "torch>=2.8", "transformers>=5.0,<6", "accelerate>=1.0", "safetensors>=0.5",
+  "numpy>=2.0", "pydantic>=2.10", "typer>=0.15", "httpx>=0.28",
+  "datasets>=3.0", "math-verify>=0.8", "jinja2>=3.1",
+  "absl-py>=2", "langdetect>=1.0.9", "immutabledict>=4", "nltk>=3.9",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.11", "build>=1.2", "playwright>=1.50"]
+
+[project.scripts]
+circuitdoctor = "circuitdoctor.cli:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/circuitdoctor"]
+
+[tool.ruff]
+line-length = 110
+extend-exclude = ["src/circuitdoctor/vendor"]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "B", "I"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,24 @@
+{
+  "revision": "83f1e7b59e762648c953de751d31f75720683622",
+  "license": "Apache-2.0",
+  "files": {
+    "instructions.py": {
+      "url": "https://raw.githubusercontent.com/google-research/google-research/83f1e7b59e762648c953de751d31f75720683622/instruction_following_eval/instructions.py",
+      "upstream_sha256": "60e086f5342a03ce8e18b64bbcccf86308f523c08aa826707a562150a52f3edf",
+      "local_sha256": "dbb3dd2b050bb0745802ba2c4a7d3713d544379177f999ad6a0e6fd15f150d1c",
+      "modification": "Package import path only"
+    },
+    "instructions_registry.py": {
+      "url": "https://raw.githubusercontent.com/google-research/google-research/83f1e7b59e762648c953de751d31f75720683622/instruction_following_eval/instructions_registry.py",
+      "upstream_sha256": "ec92d72c264f6d906978613085db262356174300370a3fffe6fefd5969ce9cfc",
+      "local_sha256": "19ddff9f4d29d85609314cbb067afa9ba26824a5e4c9f324853c48636aa034f3",
+      "modification": "Package import path only"
+    },
+    "instructions_util.py": {
+      "url": "https://raw.githubusercontent.com/google-research/google-research/83f1e7b59e762648c953de751d31f75720683622/instruction_following_eval/instructions_util.py",
+      "upstream_sha256": "a73797261eee5bf447e279d82a2b700b1bdd3cb1193412dbab1270a85832bc6b",
+      "local_sha256": "a73797261eee5bf447e279d82a2b700b1bdd3cb1193412dbab1270a85832bc6b",
+      "modification": "Package import path only"
+    }
+  }
+}
